@@ -1,59 +1,37 @@
-## Introduction
+Select your player GameObject and choose 'Add Component' in the Inspector and add a 'Character Controller'.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+![The Animator component in the Inspector window with 'IdleWalk' populated.](images/animator-component.png)
 
-### What you will make
+Adjust the collider settings so that the collider is same height as the player and Y center is half that height. Adjust the radius so that the collider covers your player. 
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+The 'Character Controller' component adds the `SimpleMove` method which you will need to call from `Update` on a script attached to the Player. 
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+Click 'Add Component' then 'New script'. Name the script 'SimpleController' (or use a name specific to your character such as 'SnowmanController'.)
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+Click on the Script in the Inspector to find it in the Project window then open the script in your Code Editor. 
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+Add code to move your character based on keyboard input. 
 
-+ A computer or tablet capable of running Scratch 3
+```
+public class SimpleController : MonoBehaviour
+{
+    public float moveSpeed = 3.0F; // default move speed
+    public float rotateSpeed = 3.0F; // default rotate speed
 
-### Software
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+    // Update is called once per frame
+    void Update()
+    {
+        CharacterController controller = GetComponent<CharacterController>();
+        transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
+        Vector3 forward = transform.TransformDirection(Vector3.forward);
+        float speed = moveSpeed * Input.GetAxis("Vertical");
+        controller.SimpleMove(forward * speed);
+    }
+}
+```
