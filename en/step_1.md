@@ -1,4 +1,4 @@
-Select your player GameObject and choose 'Add Component' in the Inspector and add a 'Character Controller'.
+Select your player GameObject and choose 'Add Cmponent' in the Inspector and add a 'Character Controller'.
 
 ![The Animator component in the Inspector window with 'IdleWalk' populated.](images/animator-component.png)
 
@@ -7,6 +7,8 @@ Adjust the collider settings so that the collider is same height as the player a
 The 'Character Controller' component adds the `SimpleMove` method which you will need to call from `Update` on a script attached to the Player. 
 
 Click 'Add Component' then 'New script'. Name the script 'SimpleController' (or use a name specific to your character such as 'SnowmanController'.)
+
+![The Script component in the Inspector window with 'Player Controller' script populated.](images/snowman-controller.png)
 
 Click on the Script in the Inspector to find it in the Project window then open the script in your Code Editor. 
 
@@ -35,3 +37,4 @@ public class SimpleController : MonoBehaviour
     }
 }
 ```
+
