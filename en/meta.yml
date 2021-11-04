@@ -1,11 +1,9 @@
-title: unity-player-character-controller
+title: Add player movement with a Character Controller
 hero_image: images/banner.png
-description: unity-player-character-controller description
+description: Add player movement with a Character Controller.
 version: 4
 listed: false
 copyedit: false
 last_tested: "2021-11-04"
 steps:
-  - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: Add player movement with a Character Controller
