@@ -1,4 +1,4 @@
-Select your player GameObject and choose 'Add Cmponent' in the Inspector and add a 'Character Controller'.
+Select your player GameObject and choose 'Add Component' in the Inspector and add a 'Character Controller'.
 
 ![The Animator component in the Inspector window with 'IdleWalk' populated.](images/animator-component.png)
 
