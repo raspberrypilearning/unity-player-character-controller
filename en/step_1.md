@@ -1,6 +1,6 @@
 Select your player GameObject and choose 'Add Component' in the Inspector and add a 'Character Controller'.
 
-![The Animator component in the Inspector window with 'IdleWalk' populated.](images/animator-component.png)
+![The Character Controller component in the Inspector window.](images/character-component.png)
 
 Adjust the collider settings so that the collider is same height as the player and Y center is half that height. Adjust the radius so that the collider covers your player. 
 
@@ -17,8 +17,8 @@ Add code to move your character based on keyboard input.
 ```
 public class SimpleController : MonoBehaviour
 {
-    public float moveSpeed = 3.0F; // default move speed
-    public float rotateSpeed = 3.0F; // default rotate speed
+    public float moveSpeed = 3.0f; // default move speed
+    public float rotateSpeed = 3.0f; // default rotate speed
 
     // Start is called before the first frame update
     void Start()
