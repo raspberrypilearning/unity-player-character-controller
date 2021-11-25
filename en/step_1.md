@@ -14,7 +14,13 @@ Click on the Script in the Inspector to find it in the Project window then open 
 
 Add code to move your character based on keyboard input. 
 
-```
+
+--- code ---
+---
+language: cs
+filename: SimpleController.cs
+line_numbers: false
+---
 public class SimpleController : MonoBehaviour
 {
     public float moveSpeed = 3.0f; // default move speed
@@ -36,5 +42,5 @@ public class SimpleController : MonoBehaviour
         controller.SimpleMove(forward * speed);
     }
 }
-```
+--- /code ---
 
