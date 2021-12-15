@@ -37,6 +37,7 @@ public class SimpleController : MonoBehaviour
     {
         // Add player animation code here if needed
         
+        // Player movement code
         CharacterController controller = GetComponent<CharacterController>();
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
         Vector3 forward = transform.TransformDirection(Vector3.forward);
