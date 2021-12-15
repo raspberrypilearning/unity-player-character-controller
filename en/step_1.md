@@ -35,6 +35,8 @@ public class SimpleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Add player animation code here if needed
+        
         CharacterController controller = GetComponent<CharacterController>();
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
         Vector3 forward = transform.TransformDirection(Vector3.forward);
