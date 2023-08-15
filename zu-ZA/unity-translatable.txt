@@ -1,0 +1,11 @@
+moveSpeed
+
+rotateSpeed
+
+controller
+
+speed
+
+Vertical
+
+Horizontal
