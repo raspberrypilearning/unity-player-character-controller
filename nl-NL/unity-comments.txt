@@ -1,0 +1,9 @@
+Standaard bewegingssnelheid
+
+Standaard rotatie snelheid
+
+Start wordt aangeroepen vóór de eerste frame-update
+
+Update wordt één keer per frame aangeroepen
+
+Code om de speler te laten bewegen
