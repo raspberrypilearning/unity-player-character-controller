@@ -1,11 +1,11 @@
-moveSpeed
+bewegingssnelheid
 
-rotateSpeed
+draaisnelheid
 
 controller
 
-speed
+snelheid
 
-Vertical
+Verticaal
 
-Horizontal
+Horizontaal
