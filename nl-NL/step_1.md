@@ -1,18 +1,18 @@
-Select your Player GameObject and choose **Add Component** in the Inspector and add a **Character Controller**.
+Selecteer je Player GameObject en kies **Add Component** in de Inspector en voeg een **Character Controller**toe.
 
-![The Character Controller component in the Inspector window.](images/character-component.png)
+![De Character Controller component in het Inspector venster.](images/character-component.png)
 
-Adjust the collider settings so that the collider is same height as the Player and the Center y value is half that of the height. Adjust the radius so that the collider covers your Player.
+Pas de collider-instellingen aan zodat de collider dezelfde hoogte heeft als de Speler en de Center y waarde de helft is van de hoogte. Pas de radius aan zodat de collider je speler bedekt.
 
-The Character Controller component adds the `SimpleMove` method, which you will need to call from `Update` on a script attached to the Player.
+De Character Controller-component voegt de `SimpleMove` -methode toe, die je moet aanroepen vanaf `Update` op een script dat aan de speler is gekoppeld.
 
-Click **Add Component**, then **New script**. Name the script `SimpleController` (or use a name specific to your character such as `SnowmanController`.)
+Klik op **Add Component**en vervolgens op **New script**. Geef het script de naam `SimpleController` (of gebruik een naam die specifiek is voor je personage zoals `SnowmanController`.)
 
-![The Script component in the Inspector window with 'Player Controller' script populated.](images/snowman-controller.png)
+![De Script-component in het Inspector-venster met ingevuld 'Player Controller'-script.](images/snowman-controller.png)
 
-Click on the script in the Inspector to find it in the Project window, then open the script in your Code Editor.
+Klik op het script in de Inspector om het te vinden in het projectvenster, open vervolgens het script in je Code Editor.
 
-Add code to move your character based on keyboard inputs.
+Voeg code toe om je personage te laten bewegen op basis van toetsenbordinvoer.
 
 
 --- code ---
