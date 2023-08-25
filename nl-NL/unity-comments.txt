@@ -1,9 +1,9 @@
-Default move speed
+Standaard bewegingssnelheid
 
-Default rotate speed
+Standaard rotatie snelheid
 
-Start is called before the first frame update
+Start wordt aangeroepen vóór de eerste frame-update
 
-Update is called once per frame
+Update wordt één keer per frame aangeroepen
 
-Player movement code
+Code om de speler te laten bewegen
