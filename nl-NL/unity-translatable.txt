@@ -1,0 +1,11 @@
+bewegingssnelheid
+
+draaisnelheid
+
+controller
+
+snelheid
+
+Verticaal
+
+Horizontaal
