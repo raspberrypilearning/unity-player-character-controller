@@ -1,9 +1,9 @@
-Default move speed
+Vitesse de déplacement par défaut
 
-Default rotate speed
+Vitesse de rotation par défaut
 
-Start is called before the first frame update
+Start est appelé avant l'update de la première image
 
-Update is called once per frame
+Update est appelée une fois par image
 
-Player movement code
+Code pour le déplacement du joueur
