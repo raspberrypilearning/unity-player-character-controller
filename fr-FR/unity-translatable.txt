@@ -1,10 +1,10 @@
-moveSpeed
+Vitessedeplacement
 
-rotateSpeed
+Vitesserotation
 
-controller
+controlleur
 
-speed
+vitesse
 
 Vertical
 
