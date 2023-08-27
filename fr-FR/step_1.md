@@ -1,18 +1,18 @@
-Select your Player GameObject and choose **Add Component** in the Inspector and add a **Character Controller**.
+Sélectionne ton GameObject Joueur et choisis **Add Component** dans l'Inspector et ajoute un **Character Controller**.
 
-![The Character Controller component in the Inspector window.](images/character-component.png)
+![Le composant Character Controller dans la fenêtre Inspector.](images/character-component.png)
 
-Adjust the collider settings so that the collider is same height as the Player and the Center y value is half that of the height. Adjust the radius so that the collider covers your Player.
+Ajuste les paramètres du collider de façon à ce qu'il soit de la même hauteur que le joueur et que la valeur de Center y soit égale à la moitié de la hauteur. Ajuste le rayon de façon à ce que le collider recouvre ton joueur.
 
-The Character Controller component adds the `SimpleMove` method, which you will need to call from `Update` on a script attached to the Player.
+Le composant Character Controller ajoute la méthode `SimpleMove`, que tu devras appeler à partir de `Update` sur un script attaché au joueur.
 
-Click **Add Component**, then **New script**. Name the script `SimpleController` (or use a name specific to your character such as `SnowmanController`.)
+Clique sur **Add Component**, puis sur **New script**. Nomme le script `SimpleController` (ou utilise un nom spécifique à ton personnage comme `SnowmanController`).
 
-![The Script component in the Inspector window with 'Player Controller' script populated.](images/snowman-controller.png)
+![Le composant Script dans la fenêtre Inspector avec le script « Player Controller » rempli.](images/snowman-controller.png)
 
-Click on the script in the Inspector to find it in the Project window, then open the script in your Code Editor.
+Clique sur le script dans l'Inspector pour le trouver dans la fenêtre Project, puis ouvre le script dans ton Code Editor.
 
-Add code to move your character based on keyboard inputs.
+Ajoute du code pour déplacer ton personnage en fonction des saisies du clavier.
 
 
 --- code ---
