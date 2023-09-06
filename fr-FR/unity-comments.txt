@@ -1,0 +1,9 @@
+Vitesse de déplacement par défaut
+
+Vitesse de rotation par défaut
+
+Start est appelé avant l'update de la première image
+
+Update est appelée une fois par image
+
+Code pour le déplacement du joueur
